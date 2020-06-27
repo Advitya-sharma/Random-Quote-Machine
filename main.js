@@ -45,7 +45,9 @@ const quotes = [
       author: "Robert Frost"
     }
   ];
-  
+
+  const colors = ["#DA7961","#9B8AEE","#28947C","#E4D889","#B27BC2"];
+
   function selector() {
     return quotes[Math.floor(Math.random() * 9)];
   }
@@ -54,9 +56,24 @@ const quotes = [
     $("#text").text(quote.quote);
     $("#author").text(`-${quote.author}`);
   }
+
+  function colorChange(){
+    document.body.style.setProperty("--defaultColor", colors[Math.floor(Math.random() * colors.length)]);
+      }
+   function getSetText(){
+     var text = $("#text").text();
+     $("#tweet-quote").attr("href",`https://twitter.com/intent/tweet?text=+${text}`);
+   }   
   $(document).ready(quoteSetter);
   
   $(document).ready(function(){
-      $("#new-quote").click(quoteSetter)
+      $("#new-quote").click(quoteSetter);
     });
-  
+
+  $(document).ready(function(){
+    $("#new-quote").click(colorChange);
+  });
+
+  $(document).ready(function(){
+    $("#tweet-quote").click(getSetText);
+  })
