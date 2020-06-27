@@ -1,0 +1,26 @@
+body{
+    background-color: blanchedalmond;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-box{
+    display: flexbox;
+    height: 500px;
+    width: 50%;
+    background-color: aqua;
+    border: 5px;
+    border-radius: 7px;
+}
+#quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
