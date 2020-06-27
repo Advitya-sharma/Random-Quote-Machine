@@ -1,26 +1,40 @@
-body{
-    background-color: blanchedalmond;
+body {
+    background-color: aquamarine;
     height: 100%;
     margin: 0;
-    padding: 0;
-}
-
-#wrapper{
+  }
+  
+  #wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#quote-box{
-    display: flexbox;
-    height: 500px;
-    width: 50%;
+    flex-direction: column;
+    height: 30%;
+    width: 60%;
     background-color: aqua;
     border: 5px;
     border-radius: 7px;
-}
-#quote{
+    margin: 0 auto;
+  }
+  
+  #quote {
+    margin: 50px 20px 0px 20px;
+  }
+  
+  #author {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  #clickables {
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: space-between;
+  }
+  
+  #tweet-quote {
+    margin-left: 10px;
+  }
+  
+  #new-quote {
+    margin-right: 10px;
+  }
+  
