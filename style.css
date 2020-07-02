@@ -1,61 +1,63 @@
 html {
-    --defaultColor: #D1A513;
-  }
+  --defaultColor: #d1a513;
+}
 body {
-    background-color: var(--defaultColor);
-    height: 100%;
-    margin: 0;
-  }
-  
-  #wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-    width: 60%;
-    background-color: white;
-    border: 5px;
-    border-radius: 7px;
-    margin: 0 auto;
-  }
-  
-  #quote {
-    margin: 50px 20px 0px 100px;
-    padding-bottom: 50px;
-    height: 100px;
-    width: 600px;
-    font-family: 'Qwigley', cursive;
-    font-size: 50px;
-    color: var(--defaultColor);
-  }
-  
-  #author {
-    float: right;
-    margin-right: 80px;
-    font-size: 30px;
-    font-family: 'Tulpen One', cursive;
-    color: var(--defaultColor);
-  }
-  
-  #clickables {
-    margin-top: 50px;
-    display: flex;
-    padding-bottom: 20px;
-    justify-content: space-between;
-  }
-  
-  #tweet-quote {
-    margin-left: 10px;
-  }
-  .fa-twitter-square{
-      color: var(--defaultColor);
-  }
-  
-  #new-quote {
-    margin-right: 10px;
-    border-radius: 5px;
-    background-color: var(--defaultColor);
-    border:0;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
+  background-color: var(--defaultColor);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#quote-box {
+  border: 5px;
+  border-radius: 7px;
+  height: 300px;
+  background-color: white;
+  width: 800px;
+}
+#quote {
+  margin: 50px 20px 0px 100px;
+  padding-bottom: 50px;
+  height: 100px;
+  width: 600px;
+  font-family: "Qwigley", cursive;
+  font-size: 50px;
+  color: var(--defaultColor);
+}
+
+#author {
+  float: right;
+  margin-right: 80px;
+  font-size: 30px;
+  font-family: "Tulpen One", cursive;
+  color: var(--defaultColor);
+}
+
+#clickables {
+  margin-top: 50px;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+#tweet-quote {
+  margin-left: 10px;
+}
+.fa-twitter-square {
+  color: var(--defaultColor);
+}
+
+#new-quote {
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: var(--defaultColor);
+  border: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
